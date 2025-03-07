@@ -1,0 +1,32 @@
+execute the code find the secret key and find the flag
+#include <stdio.h>
+ 
+int validate(char *input) {
+    char encoded[] = {198 / 2, 222 / 2, 218 / 2, 224 / 2, 234 / 2, 232 / 2, 202 / 2, 228 / 2, '\0'};
+	
+    for (int i = 0; input[i] != '\0' && encoded[i] != '\0'; i++) {
+        if (input[i] != encoded[i]) {
+            return 0;
+        }
+	}
+    return 1;
+}
+ 
+int main() {
+    char input[50];
+    printf("Enter the secret word: ");
+    scanf("%49s", input);
+ 
+    if (validate(input)) {
+        printf("Correct! Here is your flag: SMVIT{{%s}\n",input);
+	} else {
+        printf("Incorrect! Try again.\n");
+	}
+    return 0;
+}
+ 
+ 
+********************************************
+Hints:
+1.The secret word is stored as numbers in an array.
+2.The answer is something you're using right now.
