@@ -1,0 +1,17 @@
+Task:
+    • Analyze the recursive function decrypt(input).
+    • The conversion follows this pattern: 1 → a, 2 → b, 3 → c, ..., 26 → z
+    • Determine the hidden word then convert every single charcter into digit using given pattern
+    • Ex:word apple input[]=”1,16,16,12,5”;
+    • Then put that digit into input[]=”..,..,”
+    • Then call decrypt(input).
+    • Get the  appropriate flag
+    • Submit the flag in the format: CTF{word} 
+
+
+Hint:
+    • The function processes the number digit by digit and converts it into letters.
+    • The conversion follows this pattern: 1 → a, 2 → b, 3 → c, ..., 26 → z
+    • The output is a 6-letter word related to cybersecurity.
+    • The word describes a person skilled in computer security.
+    • Often associated with CTFs, ethical hacking, and penetration testing.
